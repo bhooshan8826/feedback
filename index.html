@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Live Feedback Wall</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=DM+Sans:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="noise"></div>
+
+  <div class="container">
+    <header>
+      <div class="badge">● LIVE</div>
+      <h1>Feedback<br><span>Wall</span></h1>
+      <p class="subtitle">Drop your thoughts. We're listening.</p>
+    </header>
+
+    <div class="form-card">
+      <div class="input-group">
+        <label>Your Name</label>
+        <input type="text" id="name" placeholder="e.g. Sahil Sharma" autocomplete="off">
+      </div>
+      <div class="input-group">
+        <label>Your Message</label>
+        <input type="text" id="message" placeholder="What's on your mind?" autocomplete="off">
+      </div>
+      <button onclick="sendMessage()">
+        <span>Send Message</span>
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+      </button>
+    </div>
+
+    <div class="wall-header">
+      <span class="wall-title">Messages</span>
+      <span id="msg-count" class="msg-count">0 posts</span>
+    </div>
+
+    <div id="chat"></div>
+  </div>
+
+  <!-- Firebase -->
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-database-compat.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
