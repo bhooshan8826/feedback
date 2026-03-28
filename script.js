@@ -1,9 +1,9 @@
 // 🔴 Replace with your Firebase config
 const firebaseConfig = {
-  apiKey: "YOUR_API_KEY",
-  authDomain: "YOUR_PROJECT.firebaseapp.com",
-  databaseURL: "https://YOUR_PROJECT-default-rtdb.firebaseio.com",
-  projectId: "YOUR_PROJECT_ID"
+  apiKey: "AIzaSyAB0i4hsJS9c7Gw944XmFXWHFSDwEa0UyM",
+  authDomain: "voteapp-2d4a0.firebaseapp.com",
+  databaseURL: "https://voteapp-2d4a0-default-rtdb.firebaseio.com",
+  projectId: "voteapp-2d4a0"
 };
 
 firebase.initializeApp(firebaseConfig);
